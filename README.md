@@ -1,13 +1,6 @@
 # Born2beroot 
 
 # Comandos de evaluación
-1˚ Comprobar que no haya ninguna interfaz gráfica en uso.
-
-  ```ls /usr/bin/*session```
-
-2˚ Comprobar que el servicio UFW está en uso
-
-
 1 ◦ Comprobar que no haya ninguna interfaz grafica en uso.
 
 Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo resultado que en la captura. Si aparece algo diferente se esta utilizando una interfaz grafica.
