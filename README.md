@@ -1,13 +1,13 @@
 # Born2beroot 
 
 # Comandos de evaluación
-1 ◦ Comprobar que no haya ninguna interfaz grafica en uso.
+1˚ Comprobar que no haya ninguna interfaz grafica en uso.
 
 Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo resultado que en la captura. Si aparece algo diferente se esta utilizando una interfaz grafica.
 
 <img width="352" alt="Screen Shot 2022-11-25 at 12 00 02 AM" src="https://user-images.githubusercontent.com/66915274/203872315-0e87428b-5c5a-475b-9d7c-350eafbe3bea.png">
 
-2 ◦ Comprobar que el servicio UFW esta en uso.
+2˚ Comprobar que el servicio UFW esta en uso.
 
 ```sudo ufw status```
 
@@ -17,19 +17,19 @@ Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo 
 
 <img width="720" alt="Screen Shot 2022-11-24 at 1 25 37 AM" src="https://user-images.githubusercontent.com/66915274/203668066-6a3420d4-ae72-4263-8474-2e4946e2367a.png">
 
-3 ◦ Comprobar que el servicio SSH esta en uso.
+3˚ Comprobar que el servicio SSH esta en uso.
 
 ```sudo service ssh status```
 
 <img width="711" alt="Screen Shot 2022-11-24 at 1 26 43 AM" src="https://user-images.githubusercontent.com/66915274/203668165-e642c21f-a11e-48b1-bed5-83639445251e.png">
 
-4 ◦ Comprobar que utilizas el sistema operativo Debian o Centos.
+4˚ Comprobar que utilizas el sistema operativo Debian o Centos.
 
 ```uname -v``` o ```uname --kernel-version```
 
 <img width="306" alt="Screen Shot 2022-11-24 at 1 37 17 AM" src="https://user-images.githubusercontent.com/66915274/203669122-0be5033c-c882-4a2e-bf22-6a680f998a56.png">
 
-5 ◦ Comprobar que tu usuario este dentro de los grupos "sudo" y "user42".
+5˚ Comprobar que tu usuario este dentro de los grupos "sudo" y "user42".
 
 ```getent group sudo```
 
@@ -37,19 +37,19 @@ Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo 
 
 <img width="314" alt="Screen Shot 2022-11-24 at 3 26 30 AM" src="https://user-images.githubusercontent.com/66915274/203680444-5fb18ae1-724e-4f78-a77f-a0f5bcc04913.png">
 
-6 ◦ Crear un nuevo usuario y mostrar que sigue la politica de contraseñas que hemos creado.
+6˚ Crear un nuevo usuario y mostrar que sigue la politica de contraseñas que hemos creado.
 
 ```sudo adduser name_user``` y introducimos una contraseña que siga la politica.
 
 <img width="465" alt="Screen Shot 2022-11-24 at 3 29 45 AM" src="https://user-images.githubusercontent.com/66915274/203680847-b4555fd4-f847-4bce-b944-edf3e7720c99.png">
 
-7 ◦ Creamos un nuevo grupo llamado "evaluating". 
+7˚ Creamos un nuevo grupo llamado "evaluating". 
 
 ```sudo addgroup evaluating```
 
 <img width="363" alt="Screen Shot 2022-11-24 at 3 30 47 AM" src="https://user-images.githubusercontent.com/66915274/203680980-784b2b60-82f4-405a-9f07-ec4948e86868.png">
 
-8 ◦ Añadimos el nuevo usuario al nuevo grupo.
+8˚ Añadimos el nuevo usuario al nuevo grupo.
 
 ```sudo adduser name_user evaluating```
 
@@ -59,12 +59,12 @@ Para comprobar que se haya introducido correctamente.
 
 <img width="356" alt="Screen Shot 2022-11-24 at 3 33 31 AM" src="https://user-images.githubusercontent.com/66915274/203681267-106e4d37-0ec4-4006-95a4-88dd7109c4b6.png">
 
-9 ◦ Comprobar que el hostname de la maquina es correcto login42.
+9˚ Comprobar que el hostname de la maquina es correcto login42.
 
 <img width="224" alt="Screen Shot 2022-11-24 at 3 37 27 AM" src="https://user-images.githubusercontent.com/66915274/203681701-4f9b9ff1-28b6-4d06-9489-f930eee4b6e5.png">
 
 
-10 ◦ Modificar hostname para remplazar tu login por el del evaluador. En este caso lo reemplazare por student42.
+10˚ Modificar hostname para remplazar tu login por el del evaluador. En este caso lo reemplazare por student42.
 
 ```sudo nano /etc/hostname``` y remplazamos nuestro login por el nuevo.
 
