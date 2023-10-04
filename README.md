@@ -1,6 +1,6 @@
 # Born2beroot 
 
-<a href="https://github.com/gemartin99/Born2beroot-Tutorial#9-2-comandos-de-la-evaluaci%C3%B3n-%EF%B8%8F">
+<a href="https://github.com/gemartin99/Born2beroot-Tutorial">
 Tutorial del Born2beroot
 </a>
 
