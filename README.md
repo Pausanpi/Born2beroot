@@ -1,5 +1,9 @@
 # Born2beroot 
 
+<a href="https://github.com/gemartin99/Born2beroot-Tutorial#9-2-comandos-de-la-evaluaci%C3%B3n-%EF%B8%8F">
+Tutorial del Born2beroot
+</a>
+
 # Comandos de evaluación
 1˚ Comprobar que no haya ninguna interfaz grafica en uso.
 
@@ -86,25 +90,25 @@ Una vez nos hemos logueado de nuevo podemos ver como el hostname se ha cambiado 
 
 <img width="263" alt="Screen Shot 2022-11-24 at 3 46 30 AM" src="https://user-images.githubusercontent.com/66915274/203682819-bd35ff17-3810-4644-9c44-93957e41d181.png">
 
-11 ◦ Comprobar que todas las particiones son como indica el subject.
+11˚ Comprobar que todas las particiones son como indica el subject.
 
 ```lsblk```
 
 <img width="495" alt="Screen Shot 2022-11-24 at 3 52 17 AM" src="https://user-images.githubusercontent.com/66915274/203683496-b49a7ada-2a0c-4f87-a013-e307370b3900.png">
 
-12 ◦ Comprobar que sudo esta instalado.
+12˚ Comprobar que sudo esta instalado.
 
 ```which sudo```
 
 <img width="275" alt="Screen Shot 2022-11-24 at 4 00 42 AM" src="https://user-images.githubusercontent.com/66915274/203684520-1340d8dc-1b13-4828-9056-2631e659ddcf.png">
 
-Utilizar which realmente no es una buena practica ya que no todos los paquetes se encuentran en las rutas donde which busca, aun asi para la evaluacion es mejor ya que es un comando sencillo y facil de aprender. Para un mejor uso haremos uso del siguiente comando:
+ó
 
 ```dpkg -s sudo```
 
 <img width="789" alt="Screen Shot 2022-11-24 at 4 02 13 AM" src="https://user-images.githubusercontent.com/66915274/203684698-d66c3c5b-2d6b-43c5-8f63-1a3cddaf7b4d.png">
 
-13 ◦ Introducimos el nuevo usuario dentro del grupo sudo.
+13˚ Introducimos el nuevo usuario dentro del grupo sudo.
 
 ```sudo adduser name_user sudo```
 
@@ -114,13 +118,13 @@ Comprobamos que esta dentro del grupo.
 
  <img width="415" alt="Screen Shot 2022-11-24 at 5 02 39 AM" src="https://user-images.githubusercontent.com/66915274/203691402-6b84f333-10f7-4908-8255-652613afeede.png">
 
-14 ◦ Muestra la aplicación de las reglas impuestas para sudo por el subject.
+14˚ Muestra la aplicación de las reglas impuestas para sudo por el subject.
 
 <img width="503" alt="Screen Shot 2022-11-24 at 5 12 02 AM" src="https://user-images.githubusercontent.com/66915274/203692615-bc1ec51c-ae5f-444f-9577-39b01112c969.png">
 
 <img width="762" alt="Screen Shot 2022-11-24 at 5 12 17 AM" src="https://user-images.githubusercontent.com/66915274/203692638-e6de6cba-ad42-48b9-ac84-21e2b8c50563.png">
 
-15 ◦ Muestra que la ruta /var/log/sudo/ existe y contiene almenos un fichero, en este se debería ver un historial de los comandos utilizados con sudo.
+15˚ Muestra que la ruta /var/log/sudo/ existe y contiene almenos un fichero, en este se debería ver un historial de los comandos utilizados con sudo.
 
 <img width="295" alt="Screen Shot 2022-11-24 at 5 17 54 AM" src="https://user-images.githubusercontent.com/66915274/203693244-39cb5903-7934-4f8a-8c39-f4ad94d305fb.png">
 
@@ -132,7 +136,7 @@ Ejecuta un comando con sudo y comprueba que se actualiza el fichero.
 
 <img width="661" alt="Screen Shot 2022-11-24 at 5 23 21 AM" src="https://user-images.githubusercontent.com/66915274/203693816-be7f7b83-d492-4d01-89cf-abff01d07d96.png">
 
-16 ◦ Comprueba que el programa UFW esta instalado en la maquina virtual y comprueba que funciona correctamente.
+16˚ Comprueba que el programa UFW esta instalado en la maquina virtual y comprueba que funciona correctamente.
 
 ```dpkg -s ufw```
 
@@ -142,13 +146,13 @@ Ejecuta un comando con sudo y comprueba que se actualiza el fichero.
 
 <img width="704" alt="Screen Shot 2022-11-24 at 5 25 49 AM" src="https://user-images.githubusercontent.com/66915274/203694095-3bcf3a2e-04b8-4d63-a55c-b1e952e52dad.png">
 
-17 ◦ Lista las reglas activas en UFW si no esta hecha la parte bonus solo debe aparecer la regla para el puerto 4242.
+17˚ Lista las reglas activas en UFW si no esta hecha la parte bonus solo debe aparecer la regla para el puerto 4242.
 
 ```sudo ufw status numbered```
 
 <img width="500" alt="Screen Shot 2022-11-24 at 5 27 50 AM" src="https://user-images.githubusercontent.com/66915274/203694334-08b7791e-c7b6-4325-be60-7dc4e0257411.png">
 
-18 ◦ Crea una nueva regla para el puerto 8080. Comprueba que se ha añadido a las reglas activas y acto seguido puedes borrarla.
+18˚ Crea una nueva regla para el puerto 8080. Comprueba que se ha añadido a las reglas activas y acto seguido puedes borrarla.
 
 ```sudo ufw allow 8080``` para crearla
 
@@ -174,7 +178,7 @@ Comprobamos que solo nos quedan las reglas requeridas en el subject.
 
 <img width="461" alt="Screen Shot 2022-11-24 at 5 34 11 AM" src="https://user-images.githubusercontent.com/66915274/203695013-6b9ff40b-d23f-4a95-9694-f4e73e17f252.png">
 
-19 ◦ Comprueba que el servicio ssh esta instalado en la maquina virtual, que funciona correctamente y que solo funciona por el puerto 4242.
+19˚ Comprueba que el servicio ssh esta instalado en la maquina virtual, que funciona correctamente y que solo funciona por el puerto 4242.
 
 ```which ssh```
 
@@ -184,7 +188,7 @@ Comprobamos que solo nos quedan las reglas requeridas en el subject.
 
 <img width="616" alt="Screen Shot 2022-11-24 at 5 40 34 AM" src="https://user-images.githubusercontent.com/66915274/203695746-b8a3235d-6084-40c6-8cc0-83e78d0b497c.png">
 
-20 ◦ Usa ssh para iniciar sesión con el usuario recién creado. Asegurate de que no puede usar ssh con el usuario root.
+20˚ Usa ssh para iniciar sesión con el usuario recién creado. Asegurate de que no puede usar ssh con el usuario root.
 
 Intentamos conectarnos por ssh con el usuario root pero no tenemos permisos.
 
@@ -194,7 +198,7 @@ Nos conectamos por ssh con el nuevo usuario con el comando ```ssh newuser@localh
 
 <img width="1384" alt="Screen Shot 2022-11-24 at 5 48 06 AM" src="https://user-images.githubusercontent.com/66915274/203696612-f2c98ebf-be55-4830-b5ea-b0ac98de7c65.png">
 
-21 ◦ Modifica el tiempo de ejecución del script de 10 minutos a 1.
+21˚ Modifica el tiempo de ejecución del script de 10 minutos a 1.
 
 Ejecutamos el siguiente comando para asi modificar el fichero crontab ```sudo crontab -u root -e```
 
@@ -204,7 +208,7 @@ Modificamos el primer paramentro , en vez de 10 lo cambiamos a 1.
 
 <img width="638" alt="Screen Shot 2022-11-24 at 6 31 44 AM" src="https://user-images.githubusercontent.com/66915274/203701944-393bd687-8b9c-4643-9d59-4789361e314d.png">
 
-22 ◦ Finalmente haz que el script deje de ejecutarse cuando el servidor se haya iniciado, pero sin modificar el script.
+22˚ Finalmente haz que el script deje de ejecutarse cuando el servidor se haya iniciado, pero sin modificar el script.
 
 ```sudo /etc/init.d/cron stop```
 
