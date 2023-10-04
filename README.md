@@ -43,7 +43,7 @@ Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo 
 
 6˚ Crear un nuevo usuario y mostrar que sigue la politica de contraseñas que hemos creado.
 
-```sudo adduser name_user``` y introducimos una contraseña que siga la politica.
+```sudo adduser name_user``` e introducimos una contraseña que siga la politica.
 
 <img width="465" alt="Screen Shot 2022-11-24 at 3 29 45 AM" src="https://user-images.githubusercontent.com/66915274/203680847-b4555fd4-f847-4bce-b944-edf3e7720c99.png">
 
