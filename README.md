@@ -1,4 +1,5 @@
-# Born2beroot 
+<img src="https://media.tenor.com/pPoUmi0Z1fUAAAAi/cat-pet.gif" width="60px">
+<h1>Born2beroot</h1> 
 
 <a href="https://github.com/gemartin99/Born2beroot-Tutorial">
 ✨ Tutorial del Born2beroot ✨
